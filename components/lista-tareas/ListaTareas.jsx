@@ -27,9 +27,10 @@ const ListaTareas = ({todos, handleToggle, eliminarTask}) => {
       
       <h1 className="tareas-title">Lista de Tareas</h1>
       <div className="progress-bar">
-          <Progres done={todos.length > 0 ? porcentaje.toFixed(2) : 0}/>
+          {todos.length > 0 ? (<Progres done={todos.length > 0 ? porcentaje.toFixed(2) : 0}/>) : '' }
+          
       </div>
-      <div className="items">
+      <div className="items"  >
         {tareasHTML}
       </div>
         
