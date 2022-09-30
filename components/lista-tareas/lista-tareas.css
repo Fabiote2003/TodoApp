@@ -1,0 +1,60 @@
+.tereas-container {
+    height: 494px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FCD5CE;
+    padding-top: 20px;
+}
+
+.tareas-title {
+    font-size: 32px;
+    color: #B5838D;
+    font-weight: 900;
+    font-family: 'Lato';
+}
+
+
+.progress {
+    background-color: #F2798F;
+	border-radius: 20px;
+	position: relative;
+	margin: 15px 0;
+	height: 10px;
+	width: 202px;
+}
+
+.progress-done {
+    margin-top: 15px;
+	background: #C3465D;
+	border-radius: 20px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 0;
+    max-width: 100%;
+	opacity: 0;
+	transition: 0.2s ease-in;
+}
+
+.completed-progress {
+    text-align: center;
+    color: #B5838D;
+    font-weight: bold;
+    margin-top: 6px;
+    font-family: 'Montserrat';
+}
+
+.items {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto 0px;
+    width: 100%;
+    height: 280px;
+    max-height: 280px;
+    overflow-y: scroll;
+}

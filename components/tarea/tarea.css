@@ -1,0 +1,40 @@
+.tarea-item {
+    background-color: #FFFBFB;
+    width: 75%;
+    max-width: 500px;
+    height: 45px;
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 17px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgb(179, 176, 176);
+    margin-top: 18px;
+    text-align: center;
+}
+
+.completed {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+.tarea-item div {
+    width: 19px;
+    height: 19px;
+    border: 2px solid #AB9797;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+
+.tarea-item p {
+    font-weight: 500;
+    color: #543838;
+    cursor: pointer;
+}
+
+.tarea-item img {
+    cursor: pointer;
+}

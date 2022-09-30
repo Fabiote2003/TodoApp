@@ -1,0 +1,136 @@
+.modal {
+    position: fixed;
+    background: rgba(255, 187, 195, 0.71);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: grid;
+    place-items: center;
+    transition: 1s ease 0.5s;
+}
+
+.mensaje-error {
+    padding: 10px;
+    color: red;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.text-container .mensaje-activado {
+    margin-top: 5px;
+}
+
+.text-container {
+    width: 35%;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    background: #fdebe8;
+    justify-content: center;
+    border: 2px solid rgb(245, 93, 93);
+    flex-direction: column;
+    box-shadow: 2px 2px 4px rgb(240, 105, 105);
+}
+
+.close-modal__button {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    width: 40px;
+    filter: invert(100%) sepia(0%) saturate(7479%) hue-rotate(70deg) brightness(99%) contrast(107%);
+    cursor: pointer;
+}
+
+.modal-text {
+    color: #F08080;
+    text-align: center;
+}
+
+.text-container input {
+    margin-top: 20px;
+    width: 80%;
+    height: 35px;
+    border-radius: 8px;
+    border: 2px solid #F08080 ;
+    padding: 5px;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.text-container input:focus {
+    outline: 2px solid #f2acac;
+}
+
+.text-container input::placeholder {
+    font-size: 16px;
+    font-family: 'Lato';
+    color: rgb(152, 96, 96);
+}
+
+.modal-buttons {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.modal-buttons .cancel-button {
+    width: 80px;
+    height: 40px;
+    border: none;
+    background: rgb(162, 95, 95);
+    border-radius: 4px;
+    color: #fff;
+    font-family: 'Lato';
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.modal-buttons .cancel-button:hover {
+    opacity: 0.9;
+}
+
+.modal-buttons .add-button {
+    width: 80px;
+    height: 40px;
+    border: none;
+    background: #f75858;
+    border-radius: 4px;
+    color: #fff;
+    font-family: 'Lato';
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.modal-buttons .add-button:hover {
+    background: #ed3f3f;
+}
+
+@media (max-width: 800px) {
+    .text-container {
+        width: 50%;
+    }
+}
+
+@media (max-width: 650px) {
+    .text-container {
+        width: 60%;
+    }
+}
+
+@media (max-width: 500px) {
+    .text-container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 400px) {
+    .text-container {
+        width: 80%;
+    }
+}

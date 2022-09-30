@@ -1,0 +1,18 @@
+.footer-container {
+    width: 100%;
+    background-color: #FEC89A;
+    height: 13vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container h4 {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.footer-container h4 img {
+    margin-left: 5px;
+}
